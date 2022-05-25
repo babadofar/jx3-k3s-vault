@@ -68,20 +68,6 @@
 	      <td><a href='https://github.com/pusher/wave'>source</a></td>
 	    </tr>
     <tr>
-	      <td>vault-operator</td>
-	      <td><a href='https://banzaicloud.com/products/bank-vaults/' title='A Helm chart for banzaicloud/bank-vaults Vault operator'> <img src='' width='24px' height='24px'> vault-operator </a></td>
-	      <td>1.15.3</td>
-	      <td></td>
-	      <td><a href='https://banzaicloud.com/products/bank-vaults/'>source</a></td>
-	    </tr>
-    <tr>
-	      <td>vault-instance</td>
-	      <td><a href='https://github.com/jenkins-x-charts/vault-instance' title='a chart for creating a Vault instance via the vault operator'> <img src='' width='24px' height='24px'> vault-instance </a></td>
-	      <td>1.0.25</td>
-	      <td></td>
-	      <td><a href='https://github.com/jenkins-x-charts/vault-instance'>source</a></td>
-	    </tr>
-    <tr>
 		      <td colspan='5'><h3>tekton-pipelines</h3></td>
 		    </tr>
 	    <tr>
