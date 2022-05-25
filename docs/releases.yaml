@@ -1,108 +1,77 @@
-- namespace: jx-vault
-  path: helmfiles/jx-vault/helmfile.yaml
-  releases:
-  - apiVersion: v2
-    appVersion: 1.15.1
-    description: A Helm chart for banzaicloud/bank-vaults Vault operator
-    firstDeployed: "2022-04-18T09:12:58Z"
-    home: https://banzaicloud.com/products/bank-vaults/
-    lastDeployed: "2022-04-18T09:12:58Z"
-    maintainers:
-    - email: info@banzaicloud.com
-      name: Banzai Cloud
-    name: vault-operator
-    repositoryName: banzaicloud-stable
-    repositoryUrl: https://kubernetes-charts.banzaicloud.com
-    resourcePath: config-root/namespaces/jx-vault/vault-operator
-    sources:
-    - https://github.com/hashicorp/vault
-    - https://github.com/banzaicloud/bank-vaults
-    type: application
-    version: 1.15.3
-  - apiVersion: v1
-    appVersion: 1.0.25
-    description: a chart for creating a Vault instance via the vault operator
-    firstDeployed: "2022-04-18T09:13:00Z"
-    home: https://github.com/jenkins-x-charts/vault-instance
-    keywords:
-    - vault
-    lastDeployed: "2022-04-18T09:13:00Z"
-    name: vault-instance
-    repositoryName: jx3
-    repositoryUrl: https://jenkins-x-charts.github.io/repo
-    resourcePath: config-root/namespaces/jx-vault/vault-instance
-    sources:
-    - https://github.com/jenkins-x-charts/vault-instance
-    version: 1.0.25
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 1.1.64
+    appVersion: 1.1.111
     description: A Helm chart for the resources for JX Boot
-    firstDeployed: "2022-04-12T14:28:55Z"
+    firstDeployed: "2022-05-25T10:53:06Z"
     home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-04-12T14:28:55Z"
+    lastDeployed: "2022-05-25T10:53:06Z"
     name: jxboot-helmfile-resources
+    releaseName: jxboot-helmfile-resources
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.1.64
+    version: 1.1.111
   - apiVersion: v1
     description: 'This chart installs the jx-preview CRD and garbagecollection job '
-    firstDeployed: "2022-04-02T13:33:21Z"
+    firstDeployed: "2022-05-25T10:53:10Z"
     home: https://github.com/jenkins-x-plugins/jx-preview
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-04-02T13:33:21Z"
+    lastDeployed: "2022-05-25T10:53:10Z"
     name: jx-preview
+    releaseName: jx-preview
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-preview
-    version: 0.0.198
+    version: 0.0.206
   - apiVersion: v1
     description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
-    firstDeployed: "2022-04-02T13:33:27Z"
+    firstDeployed: "2022-05-25T10:53:15Z"
     home: https://github.com/jenkins-x/lighthouse
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-04-02T13:33:27Z"
+    lastDeployed: "2022-05-25T10:53:15Z"
     name: lighthouse
+    releaseName: lighthouse
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/lighthouse
-    version: 1.5.13
+    version: 1.6.5
   - apiVersion: v2
-    appVersion: 0.3.15
+    appVersion: 0.3.20
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes
-    firstDeployed: "2022-04-02T13:33:31Z"
+    firstDeployed: "2022-05-25T10:53:20Z"
     home: https://jenkins-x.io/
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-04-02T13:33:31Z"
+    lastDeployed: "2022-05-25T10:53:20Z"
     maintainers:
     - email: jenkins-x@googlegroups.com
       name: Jenkins X Team
     name: jx-build-controller
+    releaseName: jx-build-controller
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-build-controller
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-    version: 0.3.15
+    version: 0.3.20
   - apiVersion: v1
-    appVersion: 1.8.0
+    appVersion: 1.8.2
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines
       - and their logs.
-    firstDeployed: "2022-04-02T13:33:36Z"
+    firstDeployed: "2022-05-25T10:53:24Z"
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-04-02T13:33:36Z"
+    lastDeployed: "2022-05-25T10:53:24Z"
     name: jx-pipelines-visualizer
+    releaseName: jx-pipelines-visualizer
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-pipelines-visualizer
     sources:
     - https://github.com/jenkins-x/jx-pipelines-visualizer
-    version: 1.8.0
+    version: 1.8.2
 - namespace: secret-infra
   path: helmfiles/secret-infra/helmfile.yaml
   releases:
@@ -119,6 +88,7 @@
     - name: external-secrets
       url: https://github.com/external-secrets
     name: kubernetes-external-secrets
+    releaseName: kubernetes-external-secrets
     repositoryName: external-secrets
     repositoryUrl: https://external-secrets.github.io/kubernetes-external-secrets
     resourcePath: config-root/namespaces/secret-infra/kubernetes-external-secrets
@@ -135,6 +105,7 @@
     - kubernetes
     lastDeployed: "2022-04-02T13:33:57Z"
     name: pusher-wave
+    releaseName: pusher-wave
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/secret-infra/pusher-wave
@@ -151,6 +122,7 @@
     - email: info@banzaicloud.com
       name: Banzai Cloud
     name: vault-operator
+    releaseName: vault-operator
     repositoryName: banzaicloud-stable
     repositoryUrl: https://kubernetes-charts.banzaicloud.com
     resourcePath: config-root/namespaces/secret-infra/vault-operator
@@ -168,6 +140,7 @@
     - vault
     lastDeployed: "2022-04-15T07:06:51Z"
     name: vault-instance
+    releaseName: vault-instance
     repositoryName: jx3
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/secret-infra/vault-instance
@@ -178,14 +151,15 @@
   path: helmfiles/tekton-pipelines/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 0.27.2
+    appVersion: 0.29.0
     description: A Helm chart for Tekton Pipelines
-    firstDeployed: "2022-04-02T13:34:07Z"
+    firstDeployed: "2022-05-25T10:53:31Z"
     home: https://github.com/cdfoundation/tekton-helm-chart
     icon: https://avatars2.githubusercontent.com/u/47602533
-    lastDeployed: "2022-04-02T13:34:07Z"
+    lastDeployed: "2022-05-25T10:53:31Z"
     name: tekton-pipeline
+    releaseName: tekton-pipeline
     repositoryName: cdf
     repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
     resourcePath: config-root/namespaces/tekton-pipelines/tekton-pipeline
-    version: 0.27.2
+    version: 0.29.0
